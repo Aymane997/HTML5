@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Enregistrement</h1>
+    <form>
+      <div>
+        <label for="nom">Nom : </label>
+        <input type="text" id="nom" placeholder="Ex : Toto" />
+      </div>
+      <div>
+        <label for="prenom">Prenom : </label>
+        <input type="text" id="prenom" placeholder="Ex : André" />
+      </div>
+      <label for="lieu">Lieu de naissance :</label>
+      <select id="lieu">
+        <option>-- Veuillez choisir un lieu --</option>
+        <option>Maroc</option>
+        <option>Algerie</option>
+        <option>Tunisie</option>
+      </select>
+      <div>
+        <label for="Date">Date de naissance : </label>
+        <input type="date" id="Date" placeholder="Ex : 12/01/2022" />
+      </div>
+      <div>
+        <label for="Origine">Pays d'origine : </label>
+        <select id="Origine">
+          <option>-- Veuillez choisir un pays --</option>
+          <option>Maroc</option>
+          <option>Algerie</option>
+          <option>Tunisie</option>
+        </select>
+      </div>
+      <div>
+        <label for="civ">Civilité : </label><br />
+        <input type="radio" name="civ" />M.<br />
+        <input type="radio" name="civ" />Mme<br />
+      </div>
+
+      <div>
+        <label for="moyenne">Pourcentage OU moyenne obtenu en BAC : </label>
+
+        <input type="number" id="moyenne" placeholder="Ex : 15 ou 10%" />
+      </div>
+      <div>
+        <label for="formation">Formation : </label>
+        <select id="formation">
+          <option>-- Veuillez choisir une autre formation --</option>
+          <option>Data Science</option>
+          <option>Cloud</option>
+          <option>Finance</option>
+          <option>Développement Web</option>
+        </select>
+      </div>
+      <div>
+        <label for="choix">Autres choix de formation : </label>
+        <select id="choix">
+          <option>-- Veuillez choisir une autre formation --</option>
+          <option>Data Science</option>
+          <option>Cloud</option>
+          <option>Finance</option>
+        </select>
+      </div>
+      <div>
+        <label for="email">Adresse email : </label>
+        <input type="email" id="email" placeholder="Ex : abc@gmail.com" />
+      </div>
+      <div>
+        <label for="telephone">Téléphone : </label>
+        <input type="number" id="telephone" placeholder="Ex : 07777777777" />
+      </div>
+      <div>
+        <label for="motivation">Lettre de motivation : </label>
+        <textarea id="motivation" placeholder="Lettre de motivation"></textarea>
+      </div>
+      <input type="submit" value="Envoyer" />
+    </form>
+  </body>
+</html>
