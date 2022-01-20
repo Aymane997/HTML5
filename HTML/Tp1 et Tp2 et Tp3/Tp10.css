@@ -1,0 +1,118 @@
+.container {
+  display: grid;
+  grid-template-areas:
+    "one one one one"
+    "two two two two"
+    "three three three three"
+    "four four four four"
+    "four four four four"
+    "five five five five";
+  grid-gap: 30px;
+}
+
+.div {
+  display: grid;
+  grid-template-areas:
+    "un un un un"
+    "deux deux deux deux"
+    "trois trois trois trois"
+    "quatre quatre quatre quatre";
+  grid-gap: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  border: 1px solid black;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  text-align: center;
+}
+
+.items {
+  font-size: 20px;
+  font-weight: bold;
+  border: 1px solid black;
+  margin-right: 30px;
+  margin-left: 30px;
+  height: 40px;
+  text-align: center;
+}
+
+/* ======================================================================================= */
+
+.items:nth-child(1) {
+  grid-area: un;
+}
+
+.items:nth-child(2) {
+  grid-area: deux;
+}
+
+.items:nth-child(3) {
+  grid-area: trois;
+}
+
+.items:nth-child(4) {
+  grid-area: quatre;
+}
+
+/* ======================================================================================= */
+
+.div:nth-child(1) {
+  grid-area: one;
+}
+
+.div:nth-child(2) {
+  grid-area: two;
+  height: 100px;
+}
+
+.div:nth-child(3) {
+  grid-area: three;
+  height: 200px;
+}
+.div:nth-child(4) {
+  grid-area: four;
+  height: 400px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 90px;
+}
+
+.div:nth-child(5) {
+  grid-area: five;
+  height: 80px;
+}
+
+/* ======================================================================================= */
+
+@media screen and (min-width: 768px) {
+  .div {
+    grid-template-areas: "un deux trois quatre";
+  }
+  .items {
+    font-size: 20px;
+    font-weight: bold;
+    border: 1px solid black;
+    height: 30px;
+    width: 150px;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    grid-template-areas:
+      "one one one one"
+      "two two two two"
+      "three three three four"
+      "three three three four"
+      "five five five five";
+  }
+
+  .div:nth-child(3) {
+    height: 400px;
+    text-align: center;
+  }
+  .div:nth-child(2) {
+    height: 300px;
+  }
+}
