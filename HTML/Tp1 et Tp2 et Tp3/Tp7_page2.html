@@ -4,11 +4,18 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style_page1.css" />
     <title>Document</title>
   </head>
-  <body>
+  <body class="corps text">
     <main>
-      <h1>World Wide Web</h1>
+      <h1 class="TitrePage">World Wide Web</h1>
       <section>
         <article>
           <p>
@@ -21,8 +28,12 @@
           </p>
           <p>
             Le Web n’est qu’une des applications d’Internet
-            <a href="Tp7_page1.html" style="color: red" target="_blank"
-              >[lien vers la page Histoire d’Internet]</a
+            <a
+              href="Tp7_page1.html"
+              style="color: red"
+              class="lien"
+              target="_blank"
+              >"Histoire d’Internet"</a
             >
             , distincte d’autres applications comme le courrier électronique, la
             messagerie instantanée et le partage de fichiers en pair à pair. Le
@@ -34,24 +45,30 @@
             dans les textes non techniques sans qu'il soit clair si l'auteur
             désigne le Web ou Internet.
           </p>
-          <blockquote>
-            <i
-              >Le web est plus une invention sociale que technologique. Je l’ai
-              conçu pour qu’il ait un effet social – aider les gens à travailler
-              ensemble – et non comme un jouet technologique. — Tim Berners-Lee,
-              Weaving the Web, 1999</i
-            >
-          </blockquote>
-          <figure>
-            <img src="logo.svg" alt="logo" width="304" height="228" />
-            <figcaption>
-              Fig 1 : Logo historique du World Wide Web par Robert Cailliau.
-            </figcaption>
-          </figure>
+          <div class="para">
+            <blockquote>
+              <i
+                >Le web est plus une invention sociale que technologique. Je
+                l’ai conçu pour qu’il ait un effet social – aider les gens à
+                travailler ensemble – et non comme un jouet technologique. — Tim
+                Berners-Lee, Weaving the Web, 1999</i
+              >
+            </blockquote>
+          </div>
+          <div class="fig2">
+            <figure>
+              <img src="logo.svg" alt="logo" width="304" height="228" />
+              <figcaption class="cap">
+                <center>
+                  Fig 1 : Logo historique du World Wide Web par Robert Cailliau.
+                </center>
+              </figcaption>
+            </figure>
+          </div>
         </article>
-        <h2>Spécifications</h2>
+        <h2 class="SousTitre">Spécifications</h2>
         <article>
-          <h3>Abréviations</h3>
+          <h3 class="SousSousTitre">Abréviations</h3>
           <p>
             Le World Wide Web est désigné par de nombreux noms et abréviations
             synonymes :
@@ -67,9 +84,10 @@
             <li>Toile mondiale</li>
             <li>Toile</li>
           </ul>
-          <h3>La première page Web</h3>
+          <h3 class="SousSousTitre">La première page Web</h3>
           <p>Voici le code de la première page Web :</p>
-          <pre>
+          <div class="code">
+            <pre>
 &lt;HEADER&gt; 
 &lt;TITLE&gt;The World Wide Web project&lt;/TITLE&gt; 
 &lt;NEXTID N=&quot;55&quot;&gt; 
@@ -128,7 +146,9 @@ NAME=49 HREF=&quot;LineMode/Defaults/Distribution.html&quot;&gt; anonymous FTP&l
 &lt;/DL&gt; 
 &lt;/BODY&gt;
 
-          </pre>
+          </pre
+            >
+          </div>
         </article>
       </section>
     </main>

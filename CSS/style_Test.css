@@ -1,0 +1,20 @@
+.parent {
+  background-color: aqua;
+  height: 500px;
+  width: 500px;
+  argin-top: 100px;
+  margin-bottom: 100px;
+  margin-left: 100px;
+}
+
+.child1 {
+  background-color: brown;
+  height: 100px;
+  width: 100px;
+}
+
+.child2 {
+  background-color: chartreuse;
+  height: 100px;
+  width: 100px;
+}
