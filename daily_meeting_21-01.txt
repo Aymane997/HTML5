@@ -1,0 +1,77 @@
+- Correction du Tp 10 : Reproduire une maquette simple en utilisant CSS Grid (Partie CSS)
+- Introduction au JavaScript :
+    le JavaScript est un langage de script permettant d'ajouter l'interactivité et le dynamisme avec une page Web 
+- Implémentations :
+    Avec une balise:	<script></script>
+    Avec un fichier externe:	<script type="text/javascript" src=”file.js”></script>
+- La syntaxe JS :
+    Une instruction JS se termine toujours par un point virgule ;
+    la déclaration des variables : la variable myVar et myvar sont différentes
+    les commentaires : pour une seule ligne "// commentaires"
+                       pour plusieurs lignes /* commentaires
+                                                sur plusieurs
+                                                lignes
+                                                */
+- Les variables :
+    JS est un language avec un typage dynamique et faible
+    Pour déclarer une variable utiliser le mot clé Var ou let ou const avant le nomVar
+        - Var pour les variables globales (sauf pour les fonctions créer) (hoisting)
+        - let pour les variables locales
+        - const pour les variables non modifiables
+    Pour manipuler les variables :
+        - Additionner: varName = varName + 4; / varName += 5;
+        - Soustraire: varName = 6-1; / varName -=4;
+        - Multiplier / Diviser: varName = 6*5; / varName = 4/2;
+        - Incrément / Décrément: varName++; / varName--;
+- Types des variables :
+Il existe 7 types :
+    - string
+    - number
+    - null
+    - undefined
+    - boolean
+    - object
+
+- Méthodes et outils utiles :
+    Afficher une alerte : alert("mon message"); / alert(maVariable);
+    Afficher la console du navigateur : console.log("mon message"); / console.log(maVariable, "1");
+    Concaténation : let a = "Je"; / let b = "suis"; / let c = a + b;
+    Conversion de type: 
+        String en Int (ou float) : parseInt() - parseFloat()
+        All en string: string()
+
+Tp 1 :
+    déclarer deux variables de type number
+    déclarer une variable constante égale à la somme des autres variables
+    afficher un message d'alert
+    afficher des messages dans la console
+Tp 2 :
+    Ecrire un programme Javascript qui demande à l’utilisateur d’entrer à partir du clavier:
+    La distance parcourue(m) et le temps(sec).
+    calculer la vitesse et l'afficher avec alert et console.log
+
+- Opérateurs logiques :
+    Egalité : ==
+    Eglité stricte : ===
+    Différent de : !=
+    Différent stricte de :  !==
+    Plus grand / petit : > / < / >= / <=
+    ET / OU / NON : && / || / !
+
+- Structures conditionnelles
+    Condition IF - ELSE
+    Condition ternaire : if true / if false;
+
+Tp 3 :
+réalisation d'un programme Javascript qui demande l’âge d’un enfant. Ensuite, il l’informe de sa catégorie.
+
+Tp 4 :
+réalisation d'un programme Javascript qui permet à l’utilisateur de définir une adresse email et un mot de passe.
+et demander à l'utilisateur de fournir l’email et le mot de passe s'ils sont incorrectes.
+
+- Les boucles :
+    FOR : for (let i=0; i<10; i++) { … };
+    FOR … OF : for (index of tab) { index };
+
+Commentaires : - La méthode de travail individuelle puis discussion avec l'équipe appréciée.
+               - CSS nécessite plus que le temps accordé, possibilité de faire un projet qui regroupe HTML CSS JS ?
